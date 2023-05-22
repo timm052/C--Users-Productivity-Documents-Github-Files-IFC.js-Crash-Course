@@ -2,7 +2,31 @@ body {
   background-color: rgb(255, 247, 215);
 }
 
-/* Wow its a comment */
+/* Square Brackets can be used to apply conditional to styles */
+a[href="https://www.google.com.au"]
+{
+  background-color: cornflowerblue;
+  padding: 0.5%;
+  border-radius: 5px;
+}
+
+/* can used to match partial strings */
+a[href*="twit"] {
+  background-color: rgb(34, 165, 65);
+  padding: 0.5%;
+  border-radius: 5px;
+}
+
+/* ^ matches starts with $ ends with*/
+a[href^="https"][href$=".com"] {
+  background-color: rgb(34, 165, 65);
+  padding: 0.5%;
+  border-radius: 5px;
+}
+
+/* HTML Elments inherent styles parent -> Child */
+/* Selecting elements in CSS 3 ways
+/* By Tag */
 p {
   color: rgb(255, 255, 255);
   font-style: italic;
@@ -10,4 +34,40 @@ p {
   padding: 0.5%;
   border-radius: 5px;
   width: 50%;
+}
+
+/* By using classes */
+/* you can have as many classes as you want prefrence classes */
+/* order of priority ID > Class > HTML Selectors */
+.example-class {
+  background-color: dimgray;
+}
+
+/* Apply to elements the are children of .text-container and p */
+.text-container > p {
+  color:lightgoldenrodyellow;
+}
+
+/* Apply to the p element after .first */
+.first + p{
+  color:rgb(210, 249, 250);
+  font-weight: 600;
+
+}
+
+/* Apply to the p element to all siblings with class*/
+.first ~ p,h1{
+  color:rgb(220, 165, 0);
+  font-weight: 800;
+
+}
+
+.second{
+  font-size: larger;
+}
+
+/* By using ID */
+#example-id {
+  background-color: darkmagenta;
+  width: 25%;
 }
