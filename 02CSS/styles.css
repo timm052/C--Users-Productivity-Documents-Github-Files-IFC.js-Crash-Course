@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(255, 247, 215);
+}
+
+/* Wow its a comment */
+p {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  background-color: crimson;
+  padding: 0.5%;
+  border-radius: 5px;
+  width: 50%;
+}
