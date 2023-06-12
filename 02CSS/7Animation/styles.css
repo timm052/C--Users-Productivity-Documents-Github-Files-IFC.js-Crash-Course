@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.anityp {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+    animation-name: example-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.aniuser{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: cadetblue;
+    transition: background-color 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.aniuser:hover {
+    background-color: darkkhaki;
+    border-radius: 1rem;
+}
+
+@keyframes example-animation {
+    0% {
+        background-color: antiquewhite;
+    }
+
+    50% {
+        background-color: aquamarine;
+    }
+
+    100% {
+        background-color: antiquewhite;
+    }
+}

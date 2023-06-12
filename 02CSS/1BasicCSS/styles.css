@@ -1,5 +1,7 @@
 body {
   background-color: rgb(255, 247, 215);
+  font-family: 'Flow Circular', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Square Brackets can be used to apply conditional to styles */
@@ -32,8 +34,16 @@ p {
   font-style: italic;
   background-color: crimson;
   padding: 0.5%;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 3px solid black;
   width: 50%;
+  line-height: 130%;
+}
+
+h1 {
+  font-family: 'Flow Circular', cursive;
+  font-size: 6rem;
+  font-weight:400;
 }
 
 /* By using classes */
@@ -63,7 +73,11 @@ p {
 }
 
 .second{
-  font-size: larger;
+  font-size: 2rem;
+}
+
+.third{
+  font-size: 2rem;
 }
 
 /* By using ID */
