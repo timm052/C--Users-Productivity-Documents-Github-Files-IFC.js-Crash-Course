@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.purple {
+    background-color: purple;
+}
+
+.grey {
+    background-color: gray;
+}
+
+.darkgrey {
+    background-color: rgb(93, 93, 93);
+}
+
+.main-container li {
+    padding: .2rem;
+    border: solid 1px gray;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.main-container li:hover {
+    cursor: pointer;
+}
